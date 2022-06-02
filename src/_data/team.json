@@ -1,0 +1,89 @@
+{
+  "headline": {
+    "idHeading": "team-title",
+    "heading": "Meet our team",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+  },
+  "cards": [
+    {
+      "image": "../asset/img/team/Image-1(3).png",
+      "name": "Leonard John Davies",
+      "job": "Cofounder, CEO",
+      "social": {
+        "facebookUrl": "/facebook.com",
+        "twitterUrl": "",
+        "linkedinUrl": ""
+      }
+    },
+    {
+      "image": "../asset/img/team/Image-3(2).png",
+      "name": "Francis Weber",
+      "job": "Vice Chairman",
+      "social": {
+        "facebookUrl": "",
+        "twitterUrl": "",
+        "linkedinUrl": ""
+      }
+    },
+    {
+      "image": "../asset/img/team/Image-4(2).png",
+      "name": "Kyla Obrien",
+      "job": "Head of Authority",
+      "social": {
+        "facebookUrl": "",
+        "twitterUrl": "",
+        "linkedinUrl": ""
+      }
+    },
+    {
+      "image": "../asset/img/team/Image-5.png",
+      "name": "Adrian Dixon",
+      "job": "Support Executive",
+      "social": {
+        "facebookUrl": "",
+        "twitterUrl": "",
+        "linkedinUrl": ""
+      }
+    },
+    {
+      "image": "../asset/img/team/Image-6.png",
+      "name": "Freddy Busby",
+      "job": "Project Manager",
+      "social": {
+        "facebookUrl": "",
+        "twitterUrl": "",
+        "linkedinUrl": ""
+      }
+    },
+    {
+      "image": "../asset/img/team/Image-7.png",
+      "name": "Dale Banks",
+      "job": "Accountatnt, Finance",
+      "social": {
+        "facebookUrl": "",
+        "twitterUrl": "",
+        "linkedinUrl": ""
+      }
+    },
+    {
+      "image": "../asset/img/team/Image-8.png",
+      "name": "Miriam Middleton",
+      "job": "Cofounder, CEO",
+      "social": {
+        "facebookUrl": "",
+        "twitterUrl": "",
+        "linkedinUrl": ""
+      }
+    },
+    {
+      "image": "../asset/img/team/Image-9.png",
+      "name": "Ellen Walton",
+      "job": "Vice Chairman",
+      "social": {
+        "facebookUrl": "",
+        "twitterUrl": "",
+        "linkedinUrl": ""
+      }
+    }
+  ]
+}

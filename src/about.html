@@ -1,0 +1,174 @@
+---
+title: about
+layout: layouts/base.html
+bodyClass: about
+eleventyNavigation:
+  key: About
+  order: 200
+---
+
+<!--=============== HERO ===============-->
+<article class="[ hero ] [ wrapper flow ]" aria-labelledby="{{ heroes.about.idTitle }}">
+  <div class="[ flex-space-column-responsive ] [ flow ]">
+    <div class="[ post ] [ flow ]">
+      <p class="title title--line" id="{{ heroes.about.idTitle }}">
+        {{ heroes.about.title }}
+      </p>
+      <h1>{{ heroes.about.heading }}</h1>
+    </div>
+    <div class="flow">
+      <p class="fw-bold fs-400 text-dark">{{ heroes.about.description }}</p>
+      <p class="flow-space-2">{{ heroes.about.descriptionTwo }}</p>
+    </div>
+  </div>
+  <div class="margin-block-start-8">
+    <video
+      controls
+      src="{{ heroes.about.videoUrl }}"
+      poster="{{ heroes.about.poster}}"
+    ></video>
+  </div>
+</article>
+<!--=============== ARTICLE ===============-->
+<article
+  class="[ article ] [ region ] [ bg-primary margin-block-start-0 margin-inline-0 ]"
+>
+  <div class="wrapper flow">
+    <div class="flex-space-column-revers-responsive">
+      <div class="[ post ] [ flow ]">
+        <p class="title">our mission</p>
+        <h3>We make the world we save our own environment</h3>
+        <p class="flow-space-1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+          in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
+          interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
+          cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+        </p>
+      </div>
+      <div class="[ post ] [ flow ]">
+        <p class="title">our Vision</p>
+        <h3>Plant more trees to make world air pollution free</h3>
+        <p class="flow-space-1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+          in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
+          interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
+          cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+        </p>
+      </div>
+    </div>
+    <!--=============== SUPPORTERS ===============-->
+    {% include "./_includes/partials/blocks/supporters.html" %}
+  </div>
+</article>
+<!--=============== AWARDS ===============-->
+<section class="awards" aria-labelledby="{{ awards.headline.idHeading}}">
+  <div class="wrapper flow">
+    <header class="headline" data-layout="center">
+      <h2 id="{{ awards.headline.idHeading}}">{{ awards.headline.heading }}</h2>
+    </header>
+    <ul class="[ cards ] [ auto-grid ]" role="list">
+      {% for award in awards.cards %}
+      <li class="[ card ] [ flow ]">
+        <div class="[ card__img ]">
+          <img src="{{award.image}}" alt="" />
+        </div>
+        <div class="[ card__body ] [ text-center flow-space-2 ]">
+          <h3 class="text-dark fs-500">{{award.year}}</h3>
+          <p class="text-dark fw-bold">{{award.event}}</p>
+          <p class="fw-medium fs-100">{{award.place}}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+<!--=============== JOURNEY ===============-->
+<section class="[ our-journey ] [ wrapper ]" aria-labelledby="journey-title">
+  <div
+    class="[ region ] [ bg-dark padding-inline-start-8 ] [ flex-space-column-responsive ]"
+  >
+    <div class="flow">
+      <p class="[ title ] [ text-inherit ]" id="journey-title">our journey</p>
+      <h2 class="flow-space-2 text-inherit">How we raised 34M</h2>
+      <p class="text-white/60">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+        in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
+        interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh.
+      </p>
+      <div class="[ our-journey__stats ] [ flow-space-4 gap-4 ]">
+        <div class="[ stat ] [ fw-medium ]">
+          <div class="fs-600">
+            <p class="num" data-goal="34">0</p>
+            M+
+          </div>
+          <p class="text-white/60 fs-100">Donation Received</p>
+        </div>
+        <div class="[ stat ] [ fw-medium ]">
+          <div class="fs-600">
+            <p class="num" data-goal="400">0</p>
+            +
+          </div>
+          <p class="text-white/60 fs-100">Volunters</p>
+        </div>
+        <div class="[ stat ] [ fw-medium ]">
+          <div class="fs-600">
+            <p class="num" data-goal="40">0</p>
+            K+
+          </div>
+          <p class="text-white/60 fs-100">Trees planted</p>
+        </div>
+      </div>
+    </div>
+    <div class="our-journey__img">
+      <img src="../asset/img/Image-1(2).png" alt="" />
+    </div>
+  </div>
+</section>
+<!--=============== TEAM ===============-->
+<article class="team" aria-labelledby="{{ team.headline.idHeading }}">
+  <div class="wrapper flow">
+    <header class="[ headline ] [ flow ]" data-layout="center">
+      <h2 id="{{ team.headline.idHeading }}">{{ team.headline.heading }}</h2>
+      <p>{{ team.headline.description }}</p>
+    </header>
+    <ol class="[ cards ] [ auto-grid ] [ gap-row-6 gap-col-3 ]" role="list">
+      {% for card in team.cards %}
+      <li class="[ card ] [ flow ]">
+        <div>
+          <img src="{{ card.image }}" alt="" />
+        </div>
+        <div class="[ flow ] [ flow-space-2 text-center ]">
+          <h3 class="fw-medium fs-400">{{ card.name }}</h3>
+          <p class="fw-medium fs-100 text-black/60 flow-space-1">{{ card.job }}</p>
+          <ul
+            class="[ card__social ] [ text-black/80 fs-400 gap-3 flow-space-2 ]"
+            role="list"
+          >
+            <li>
+              <a href="{{ card.social.facebookUrl }}"
+                ><span class="fa-brands fa-facebook" aria-hidden="ture"></span
+              ></a>
+            </li>
+            <li>
+              <a href="{{ card.social.twitterUrl }}"
+                ><span class="fa-brands fa-twitter" aria-hidden="ture"></span
+              ></a>
+            </li>
+            <li>
+              <a href="{{ card.social.linkedinUrl }}"
+                ><span class="fa-brands fa-linkedin" aria-hidden="ture"></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</article>
+<!--=============== CTA ===============-->
+{% include "./_includes/partials/blocks/cta-section.html" %}
+<!--=============== NEWS ===============-->
+{% include "./_includes/partials/blocks/news.html" %}
+<!--=============== EVENTS ===============-->
+{% include "./_includes/partials/blocks/events.html" %}

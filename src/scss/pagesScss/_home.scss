@@ -1,0 +1,40 @@
+.home {
+  .working {
+    .feature {
+      border-left: 1px solid $color-border-default;
+      @include breakpoint-down(medium) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .chart {
+    &__title {
+      .stats {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .stat {
+          display: flex;
+          align-items: center;
+
+          &__color {
+            background-color: var(--clr);
+            border-radius: $border-radius-4;
+          }
+        }
+      }
+    }
+
+    &__circle {
+      position: relative;
+
+      img {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+      }
+    }
+  }
+}

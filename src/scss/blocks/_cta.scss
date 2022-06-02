@@ -1,0 +1,23 @@
+.cta {
+  max-height: rem(384);
+  background: url('../../asset/img/Image2.png') center center / cover no-repeat fixed;
+  padding-block: var(--space-8);
+  border-radius: $border-radius-12;
+
+  @include overlay;
+
+  &__content {
+    position: relative;
+    z-index: 1;
+  }
+
+  h2 {
+    margin-inline: auto;
+  }
+
+  &__button {
+    --flow-space: var(--space-4);
+    width: fit-content;
+    margin-inline: auto;
+  }
+}

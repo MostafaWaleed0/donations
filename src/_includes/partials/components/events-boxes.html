@@ -1,0 +1,21 @@
+<ol class="[ our-events__boxes ] [ flex-space-column-responsive ]" role="list">
+  {% for box in events.boxes%}
+  <li
+    class="[ box ] [ flex-space-column-responsive ] [ padding-block-start-4 padding-inline-end-6 padding-block-end-5 padding-inline-start-5 gap-3 bg-secondary w-6/12 ]"
+  >
+    <div class="box__date">
+      <h2 class="fw-medium">{{ box.day }}</h2>
+      <p class="title">{{ box.month }}</p>
+    </div>
+    <div class="[ box__titles ] [ flow ]">
+      <p class="title title--line">{{ box.title }}</p>
+      <h3 class="fs-600 flow-space-1">{{ box.heading }}</h3>
+    </div>
+    <div class="box__cta">
+      <a href="" class="fs-400 bg-default">
+        <span class="fa-solid fa-arrow-right" aria-hidden="ture"></span
+      ></a>
+    </div>
+  </li>
+  {% endfor %}
+</ol>

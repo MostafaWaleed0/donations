@@ -1,0 +1,29 @@
+.carousel {
+  overflow: hidden;
+
+  &__indicators {
+    display: flex;
+    align-items: center;
+
+    li {
+      border-bottom: 1px solid $color-border-default;
+
+      button {
+        &.active {
+          border-radius: 0;
+          border-bottom: 2px solid $green-400;
+          color: $neutral-900;
+        }
+      }
+    }
+  }
+
+  .slides {
+    height: 100%;
+    overflow: hidden;
+
+    .slide {
+      flex-basis: 100%;
+    }
+  }
+}

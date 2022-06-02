@@ -1,0 +1,22 @@
+.title {
+  color: $neutral-700;
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing-1;
+  font-weight: $font-weight-700;
+  line-height: rem(19);
+  width: fit-content;
+
+  &--line {
+    @include pseudo($top: 50%, $left: calc(var(--space-8) * -1)) {
+      background: $neutral-700;
+      width: rem(72);
+      height: rem(2);
+      transform: translateY(-50%);
+      @include breakpoint-down(medium) {
+        width: 100%;
+        left: 0;
+        top: rem(20);
+      }
+    }
+  }
+}

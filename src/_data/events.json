@@ -1,0 +1,24 @@
+{
+  "headline": {
+    "idTitle": "events-title",
+    "heading": "Our Events"
+  },
+  "headlineTwo": {
+    "idTitle": "events-title",
+    "heading": "Other events"
+  },
+  "boxes": [
+    {
+      "day": "23",
+      "month": "sep",
+      "title": "Next Events",
+      "heading": "Say no to plastic usage and save the planet"
+    },
+    {
+      "day": "25",
+      "month": "sep",
+      "title": "Next Events",
+      "heading": "Weekly cleaning program"
+    }
+  ]
+}

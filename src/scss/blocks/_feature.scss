@@ -1,0 +1,25 @@
+.feature {
+  &__item {
+    display: flex;
+    align-items: first baseline;
+
+    h3 {
+      font-size: var(--fs-500);
+    }
+
+    h3 + p {
+      margin-top: var(--space-1);
+    }
+
+    .feature__icon {
+      margin-right: var(--space-3);
+
+      > * {
+        padding: 0.3rem;
+        color: $neutral-200;
+        background: var(--clr, $green-400);
+        border-radius: $border-radius-4;
+      }
+    }
+  }
+}

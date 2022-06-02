@@ -1,0 +1,11 @@
+<ol class="[ cards ] [ auto-grid ]" role="list">
+  {% for card in newsData.cards %}
+  <li class="[ card ] [ flow ]">
+    <div class="card__img">
+      <img src="{{ card.image }}" alt="" />
+    </div>
+    <h3 class="fs-400 fw-medium">{{ card.title }}</h3>
+    <p class="flow-space-1">{{ card.description }}</p>
+  </li>
+  {% endfor %}
+</ol>

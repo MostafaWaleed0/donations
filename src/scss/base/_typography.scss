@@ -1,0 +1,63 @@
+body {
+  font: $font-weight-body $font-size-body/1.6 $font-family-body;
+  color: $color-text-body;
+}
+
+:where(h1, h2, h3) {
+  font-size: clamp(
+    var(--fluid-type-min, 1rem),
+    calc(1rem + var(--fluid-type-target, 3vw)),
+    var(--fluid-type-max, 1.3rem)
+  );
+  font-weight: $font-weight-heading;
+  color: $color-text-heading;
+}
+
+:where(h1, h2, h3, p) {
+  font-size: var(--font-size);
+  max-width: var(--width);
+}
+
+:where(h1) {
+  --flow-space: var(--space-4);
+  --font-size: var(--fs-900);
+  --width: 18ch;
+  line-height: 1.2;
+}
+
+:where(h1:not([class])) {
+  --fluid-type-min: 2.4rem;
+  --font-size: var(--fs-800);
+  --width: 19ch;
+}
+
+:where(h2) {
+  --flow-space: var(--space-4);
+  --font-size: var(--fs-700);
+  --width: 24ch;
+  line-height: 1.2;
+}
+
+:where(h3) {
+  --flow-space: var(--space-2);
+  --font-size: var(--fs-600);
+  --width: 26ch;
+  line-height: 1.5;
+}
+
+:where(p) {
+  --flow-space: 1em;
+  --width: 67ch;
+  color: inherit;
+}
+
+:where(textarea, label) {
+  font-size: $font-size-100;
+}
+
+:where(label) {
+  display: block;
+  text-transform: capitalize;
+  color: rgb($neutral-900-rgb, 0.6);
+  font-weight: $font-weight-bold;
+}

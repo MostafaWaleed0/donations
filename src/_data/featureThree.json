@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "icon": "fa-solid fa-pen",
+      "heading": "200+ Plantation in 1 week",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+    },
+    {
+      "icon": "fa-light fa-cubes",
+      "heading": "230 People Have donated",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+    },
+    {
+      "icon": "fa-solid fa-mountain-sun",
+      "heading": "30+ people joined ",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+    },
+    {
+      "icon": "fa-solid fa-compass",
+      "heading": "$324 Raised for this initiate",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "stats": [
+    {
+      "color": "#70c174",
+      "text": "40% planting trees"
+    },
+    {
+      "color": "#ac94f1",
+      "text": "35% cleanliness program"
+    },
+    {
+      "color": "#fff0ca",
+      "text": "10% helping people"
+    },
+    {
+      "color": "#f9cf64",
+      "text": "10% animal safety"
+    },
+    {
+      "color": "#f38fbf",
+      "text": "5% feeding the poor"
+    }
+  ]
+}

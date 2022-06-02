@@ -1,0 +1,19 @@
+.wrapper {
+  width: min(100% - rem(32), rem(1280));
+  margin-inline: auto;
+}
+
+.wrapper-big {
+  width: min(100% - rem(32), rem(1024));
+  margin-inline: auto;
+}
+
+.wrapper-md {
+  width: min(100% - rem(32), rem(928));
+  margin-inline: auto;
+}
+
+.wrapper-sm {
+  width: min(100% - rem(32), rem(768));
+  margin-inline: auto;
+}

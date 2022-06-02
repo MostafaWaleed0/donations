@@ -1,0 +1,33 @@
+<!--=============== HEADER ===============-->
+{% set navPages = collections.all | eleventyNavigation %}
+<header class="{% if headerBg %}[ site-head ] [ {{ headerBg }} ]{% else %}site-head{% endif %}" role="banner">
+ <div class="wrapper">
+  <div class="site-head__inner">
+      <div class="flex-space">
+        <a href="/" class="site-head__brand" aria-label="Finsweet - home"> 
+          <img src="../../../asset/img/Shape.png" alt="" />
+        </a>
+        <div class="site-head__navigation" id="primary-navigation" data-visible="false">
+          <nav  aria-label="primary" tabindex="-1">
+            <ul class="[ flex-column-responsive ] [ fw-medium ]" role="list">
+              {% for entry in navPages %}
+              <li>
+                <a href="{{ entry.url | url }}" {% if entry.url == page.url %} data-state="active" {% endif %}>{{ entry.title }}</a>
+              </li>
+              {% endfor %}
+              <li>
+                <a class="[ button ]" href="/donate/" data-type="head">Donate</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="[ site-head__close ] [ fs-600 ]" id="nav-close" role="button" aria-label="Close navigation" aria-controls="primary-navigation" aria-expanded="true">
+            <span class="fa-solid fa-xmark" aria-hidden="true" ></span>
+          </div>
+        </div>
+        <div class="[ site-head__toggle ] [ fs-600 ]" id="nav-toggle" role="button" aria-label="Open navigation"  aria-controls="primary-navigation" aria-expanded="false">
+          <span class="fa-solid fa-bars" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

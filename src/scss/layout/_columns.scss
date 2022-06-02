@@ -1,0 +1,13 @@
+$grid-cols: 11;
+@for $i from 1 through $grid-cols {
+  @include breakpoint(large) {
+    .w-#{$i}\/#{$grid-cols} {
+      max-width: calc($i / $grid-cols * 100%);
+    }
+  }
+}
+@include breakpoint(large) {
+  .w-6\/12 {
+    width: 50%;
+  }
+}

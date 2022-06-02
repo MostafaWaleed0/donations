@@ -1,0 +1,33 @@
+{
+  "headline": "Read Our News",
+
+  "headlineTwo": [
+    {
+      "heading": "Read our Recent News",
+      "description": "Edit this text to make it your own. To edit, simply click directly on the text to start We are served"
+    }
+  ],
+
+  "cards": [
+    {
+      "image": "../asset/img/news/Thumbnail.png",
+      "title": "Don’t destroy greenery and don’t spoil scenery",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim"
+    },
+    {
+      "image": "../asset/img/news/Thumbnail-1.png",
+      "title": "Is climate change happening faster than expected?",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim"
+    },
+    {
+      "image": "../asset/img/news/Thumbnail-2.png",
+      "title": "Top 10 facts about wind farms you didn't know",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim"
+    },
+    {
+      "image": "../asset/img/news/Thumbnail-3.png",
+      "title": "Our goal is to make water available for everyone",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim"
+    }
+  ]
+}

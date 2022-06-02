@@ -1,0 +1,8 @@
+# Misc
+*.log
+.env
+
+# Node modules and output
+node_modules
+public
+src/css

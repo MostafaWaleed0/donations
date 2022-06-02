@@ -1,0 +1,32 @@
+form {
+  label {
+    margin-bottom: 4px;
+  }
+
+  input {
+    border-bottom: 1px solid $color-border-default;
+    padding-block: 4px;
+  }
+
+  textarea {
+    border: 1px solid $color-border-default;
+    height: rem(156);
+    border-radius: $border-radius-4;
+    resize: none;
+  }
+}
+
+.form {
+  .inputs {
+    justify-items: unset;
+  }
+}
+
+.popup {
+  form {
+    .inputs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

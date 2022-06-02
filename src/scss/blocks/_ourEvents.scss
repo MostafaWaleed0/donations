@@ -1,0 +1,63 @@
+.our-events {
+  &__boxes {
+    .box {
+      display: flex;
+      min-height: rem(191);
+      border-radius: $border-radius-8;
+
+      @include breakpoint-down(medium) {
+        padding: var(--space-4) var(--space-3);
+
+        & > * {
+          text-align: center;
+        }
+
+        & > * > *,
+        & > * {
+          margin-inline: auto;
+        }
+      }
+
+      &__data {
+        p {
+          line-height: 1.2;
+        }
+      }
+
+      &__titles {
+        p {
+          &::before {
+            right: calc(var(--space-8) * -1);
+            @include breakpoint(large) {
+              left: unset;
+            }
+          }
+        }
+      }
+
+      &__cta {
+        display: flex;
+        align-items: center;
+        margin-inline-start: auto;
+
+        @include breakpoint-down(small) {
+          justify-content: center;
+        }
+
+        a {
+          display: grid;
+          place-items: center;
+
+          &:hover,
+          &:focus {
+            transform: translateX(em(10));
+          }
+
+          height: rem(56);
+          aspect-ratio: 1/1;
+          border-radius: $border-radius-circle;
+        }
+      }
+    }
+  }
+}

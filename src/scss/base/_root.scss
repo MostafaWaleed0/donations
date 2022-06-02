@@ -1,0 +1,23 @@
+:root {
+  // Colors
+  @each $color, $shade in $colors {
+    @each $prop, $value in $shade {
+      --clr-#{$color}-#{$prop}: #{$value};
+    }
+  }
+
+  // Font Size
+  @each $prop, $value in $type-scale {
+    --fs-#{$prop}: #{$value};
+  }
+
+  // Font Weight
+  @each $prop, $value in $type-weight {
+    --fw-#{$prop}: #{$value};
+  }
+
+  //spaces
+  @each $prop, $value in $spaces {
+    --space-#{$prop}: #{$value};
+  }
+}

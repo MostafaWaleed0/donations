@@ -1,0 +1,147 @@
+---
+title: home
+layout: layouts/home.html
+bodyClass: home
+eleventyNavigation:
+  key: Home
+  order: 100
+---
+
+<!--=============== HERO ===============-->
+<section class="[ hero ] [ text-white padding-0 ]">
+  <div class="hero__img" tabindex="-1">
+    <img src="{{ heroes.home.image }}" alt="" />
+  </div>
+  <div class="[ hero__content ] [ wrapper ]">
+    <div class="[ hero__title ] [ flow ]">
+      <h1 class="text-inherit">{{ heroes.home.heading }}</h1>
+      <div class="flow-space-5">
+        <a href="" class="[ button ]" data-type="secondary">{{ heroes.home.button }}</a>
+        <a href="" class="[ button ]">
+          <span
+            class="[ fa-solid fa-circle-play ] [ fs-400 margin-inline-end-1 ]"
+            aria-hidden="true"
+          ></span>
+          {{ heroes.home.buttonTwo }}
+        </a>
+      </div>
+    </div>
+    <div
+      class="[ hero__footer ] [ flex-space ] [ fs-400 fw-medium gap-3 text-center margin-block-end-7 ]"
+    >
+      <span>23,800 trees planted</span>
+      <span class="[ line ] [ bg-default ]"></span>
+      <span>5840 donations collected</span>
+    </div>
+  </div>
+</section>
+<!--=============== ABOUT US ===============-->
+<section class="wrapper flow" aria-labelledby="know-about-us-title">
+  <div class="flex-space-column-revers-responsive">
+    <div class="[ post ] [ flow ]">
+      <p class="title title--line" id="know-about-us-title">Know About us</p>
+      <h2>We help nature smile and survive everywhere</h2>
+      <p class="flow-space-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+        in eros elementum tristique.
+      </p>
+      <p class="flow-space-4">
+        Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+        libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
+        Nunc ut sem vitae risus tristique posuere.
+      </p>
+      <div class="flow-space-6">
+        <a href="" class="[ button ]" data-type="primary">Learn more</a>
+      </div>
+    </div>
+    <div>
+      <video
+        src="https://www.youtube.com/watch?v=WDubC6YZ9nE&list=RDWDubC6YZ9nE&start_radio=1"
+        poster="./asset/img/BG-1.png"
+        controls
+      ></video>
+    </div>
+  </div>
+  <!--=============== SUPPORTERS ===============-->
+  {% include "./_includes/partials/blocks/supporters.html" %}
+</section>
+<!--=============== WORKING ===============-->
+<section class="[ working ] [ region ] [ bg-primary ]" aria-labelledby="working-title">
+  <div class="[ wrapper ] [ flex-space-column-revers-responsive ]">
+    <div class="flow">
+      <div class="[ post ] [ flow ]">
+        <p class="title title--line" id="working-title">What we do</p>
+        <h2>We care for earth, care for the coming birth</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+          in eros elementum tristique.
+        </p>
+      </div>
+      <div
+        class="[ feature ] [ flow-space-4 margin-inline-start-8 padding-inline-start-3 w-7/11 ]"
+      >
+        <ul class="[ feature__list ] [ flow ]" role="list">
+          {% for item in featureOne.items%}
+          <li class="[ feature__item ] [ flow-space-2 ]">
+            <div class="feature__icon">
+              <span class="{{ item.icon }}" aria-hidden="true"></span>
+            </div>
+            <article>
+              <h3>{{ item.heading }}</h3>
+              <p>{{ item.description }}</p>
+            </article>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="working__img">
+      <img src="../asset/img/Image.png" alt="" />
+    </div>
+  </div>
+</section>
+<!--=============== PROJECTS ===============-->
+<section class="projects" aria-labelledby="{{ projects.post.idTitle }}">
+  <div class="wrapper flow">
+    <header class="[ post ] [ flow ]">
+      <p class="title title--line" id="{{ projects.post.idTitle }}">
+        {{ projects.post.title }}
+      </p>
+      <h2>{{ projects.post.heading }}</h2>
+    </header>
+    {% include "./_includes/partials/components/project-cards.html" %}
+  </div>
+</section>
+<!--=============== CHART ===============-->
+<section class="[ chart ] [ region ] [ bg-dark ]">
+  <div class="[ wrapper ] [ flex-space-column-responsive ]">
+    <div class="[ chart__title ] [ flow ]">
+      <h2 class="text-inherit">How we spend your donations and where it goes</h2>
+      <p class="text-white/60">
+        We understand that when you make a donation, you want to know exactly where your
+        money is going and we pledge to be transparent.
+      </p>
+      <ul class="[ stats ] [ flow-space-4 fw-medium w-8/11 ]" role="list">
+        {% for stat in stats.stats%}
+        <li class="[ stat ] [ margin-block-start-2 margin-inline-end-3 ]">
+          <div
+            class="[ stat__color ] [ margin-inline-end-1 padding-1 ]"
+            style="--clr: {{stat.color}}"
+          ></div>
+          <div>{{ stat.text}}</div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="chart__circle" tabindex="0" aria-label="chart">
+      <img src="./asset/img/Vector-1.png" alt="" />
+      <canvas id="myChart" style="height: 375px; width: 375px"> </canvas>
+    </div>
+  </div>
+</section>
+<!--=============== CTA ===============-->
+{% include "./_includes/partials/blocks/cta-section.html" %}
+<!--=============== NEWS ===============-->
+{% include "./_includes/partials/blocks/news.html" %}
+<!--=============== EVENTS ===============-->
+{% include "./_includes/partials/blocks/events.html" %}

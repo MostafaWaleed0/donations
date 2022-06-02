@@ -1,0 +1,43 @@
+<footer
+  class="[ site-foot ] {% if footerGapTop == false %}[ bg-dark padding-block-end-8 ]{% else %}[ margin-block-start-8 padding-block-end-8 bg-dark ]{% endif %}"
+  role="contentinfo"
+>
+  <div class="wrapper">
+    <div class="site-foot__brand">
+      <img src="../asset/img/Vector-1.png" alt="" />
+    </div>
+    <nav class="site-foot__navigation" tabindex="-1">
+      <div class="footer__link">
+        <p class="fw-bold">Our team</p>
+        <ul role="list" class="text-white/78">
+          {% for item in footerNavigation.linksOne %}
+          <li><a href="{{  item.url }}">{{ item.text }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="footer__link">
+        <p class="fw-bold">More</p>
+        <ul role="list" class="text-white/78">
+          {% for item in footerNavigation.linksTwo %}
+          <li><a href="{{  item.url }}">{{ item.text }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="footer__link">
+        <p class="fw-bold">Connect</p>
+        <ul role="list" class="text-white/78">
+          {% for item in footerNavigation.linksThree %}
+          <li><a href="{{  item.url }}">{{ item.text }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </nav>
+    <div class="[ site-foot__form ] [ flow ]">
+      <h2 class="text-inherit">Subscribe to get latest updates</h2>
+      <form action="#" class="flow-space-3">
+        <input type="email" placeholder="Your email" />
+        <button class="[ button ]" data-type="secondary">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</footer>

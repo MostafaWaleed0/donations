@@ -1,0 +1,55 @@
+---
+title: media
+headerBg: bg-primary
+layout: layouts/base.html
+bodyClass: media
+eleventyNavigation:
+  key: media
+  order: 400
+---
+
+<!--=============== HERO ===============-->
+<section
+  class="[ hero ] [ {{ headerBg }} ] [ region ]"
+  aria-labelledby="{{ heroes.media.idTitle }}"
+>
+  <div class="[ wrapper ] [ flex-space-column-responsive ] [ gap-8 ]">
+    <div class="[ post ] [ flow ]">
+      <p class="title title--line" id="{{ heroes.media.idTitle }}">
+        {{ heroes.media.title }}
+      </p>
+      <h1>{{ heroes.media.heading }}</h1>
+      <p>{{ heroes.media.description }}</p>
+      <a href="" class="[ button ]" data-type="primary">{{ heroes.media.button }}</a>
+    </div>
+    <div class="[ blogs ] [ padding-3 bg-default w-5/11 ]">
+      <ul class="[ blogs__list ] [ flow ]" role="list">
+        {% for blogs in blogs.blogs %}
+        <li class="[ blogs-item ] [ flow-space-3 ]">
+          <div class="[ blogs-item__img ] [ margin-inline-end-3 ]">
+            <img src="{{ blogs.image }}" alt="" />
+          </div>
+          <div class="[ flow ] [ w-6/11 ]">
+            <h3 class="fs-400 fw-bold">{{ blogs.heading }}</h3>
+            <p class="flow-space-1">{{ blogs.description }}</p>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+<!--=============== NEWS ===============-->
+<section class="our-news" aria-labelledby="news-title-two">
+  <div class="wrapper flow">
+    <header class="[ headline ] [ flow ]" data-layout="center">
+      {% for headline in newsData.headlineTwo %}
+      <h2 id="news-title-two">{{ headline.heading }}</h2>
+      <p>{{ headline.description }}</p>
+      {% endfor %}
+    </header>
+    {% include "./_includes/partials/components/news-cards.html" %}
+  </div>
+</section>
+<!--=============== EVENTS ===============-->
+{% include "./_includes/partials/blocks/events.html" %}

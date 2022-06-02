@@ -1,0 +1,19 @@
+{
+  "blogs": [
+    {
+      "image": "../asset/img/Image-3(3).png",
+      "heading": "Don't destroy greenery and don't spoil scenery.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim"
+    },
+    {
+      "image": "../asset/img/Image-4(3).png",
+      "heading": "Why saving wildlife is extremely important",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim"
+    },
+    {
+      "image": "../asset/img/Image-5(2).png",
+      "heading": "Caring for the present is caring for the future",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim"
+    }
+  ]
+}

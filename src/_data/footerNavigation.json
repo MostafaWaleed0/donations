@@ -1,0 +1,56 @@
+{
+  "linksOne": [
+    {
+      "text": "About us",
+      "url": "/about/"
+    },
+    {
+      "text": "Team",
+      "url": "/home/"
+    },
+    {
+      "text": "What we do",
+      "url": "/WhatWeDo/"
+    },
+    {
+      "text": "Contact",
+      "url": "/contact/"
+    }
+  ],
+  "linksTwo": [
+    {
+      "text": "Projects",
+      "url": "/projects/"
+    },
+    {
+      "text": "Events",
+      "url": "/events/"
+    },
+    {
+      "text": "Donate",
+      "url": "/donate/"
+    },
+    {
+      "text": "Blog",
+      "url": "/blog/"
+    }
+  ],
+  "linksThree": [
+    {
+      "text": "Facebook",
+      "url": "/home/"
+    },
+    {
+      "text": "Instagram",
+      "url": "/home/"
+    },
+    {
+      "text": "Twitter",
+      "url": "/home/"
+    },
+    {
+      "text": "Linkdin ",
+      "url": "/home/"
+    }
+  ]
+}

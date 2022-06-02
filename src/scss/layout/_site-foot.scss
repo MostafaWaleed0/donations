@@ -1,0 +1,50 @@
+.site-foot {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    > * {
+      margin-top: var(--space-8);
+    }
+  }
+
+  &__logo {
+    width: rem(106.21);
+    height: rem(24);
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+
+    > * {
+      margin-right: rem(88);
+
+      ul {
+        > li {
+          margin-top: var(--space-3);
+        }
+      }
+    }
+  }
+
+  &__form {
+    h2 {
+      --width: 18ch;
+    }
+
+    form {
+      display: flex;
+
+      input {
+        flex: 1;
+        width: 100%;
+        border-radius: $border-radius-4 0 0 $border-radius-4;
+        padding: rem(22) rem(24);
+        border: 1px solid #ebf0f94d;
+        background: none;
+      }
+    }
+  }
+}

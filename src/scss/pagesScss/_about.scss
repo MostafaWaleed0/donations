@@ -1,0 +1,64 @@
+.about {
+  .article {
+    --_height-pseudo: 14rem; // 224px
+    @include pseudo($top: calc(var(--_height-pseudo) * -1), $z-index: -1) {
+      width: 100%;
+      height: var(--_height-pseudo);
+      background: inherit;
+    }
+  }
+
+  .awards {
+    .cards {
+      --auto-grid-min-size: 18rem;
+
+      .card {
+        &__img {
+          img {
+            margin-inline: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .our-journey {
+    .region {
+      --region-padding: var(--space-7);
+      border-radius: $border-radius-12;
+    }
+
+    p {
+      --width: 54ch;
+    }
+
+    &__stats {
+      display: flex;
+      align-items: center;
+
+      .stat {
+        & > div {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+
+    img {
+      border-radius: $border-radius-12 0 0 $border-radius-12;
+    }
+  }
+
+  .team {
+    .cards {
+      --auto-grid-min-size: 17rem;
+
+      .card {
+        &__social {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

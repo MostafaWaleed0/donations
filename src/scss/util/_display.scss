@@ -1,0 +1,36 @@
+.flex-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column-responsive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  @include breakpoint-down(medium) {
+    flex-direction: column;
+  }
+}
+
+.flex-space-column-responsive {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: var(--space-3);
+  @include breakpoint-down(medium) {
+    flex-direction: column;
+  }
+}
+
+.flex-space-column-revers-responsive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: var(--space-8);
+  @include breakpoint-down(medium) {
+    flex-direction: column-reverse;
+  }
+}

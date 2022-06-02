@@ -1,0 +1,17 @@
+.post {
+  @include breakpoint(large) {
+    margin-left: var(--space-8);
+  }
+
+  [href] {
+    --flow-space: var(--space-4);
+  }
+
+  &[data-layout='center'] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}

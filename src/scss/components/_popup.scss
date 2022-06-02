@@ -1,0 +1,17 @@
+.popup {
+  --flow-space: var(--space-4);
+  border-radius: $border-radius-8;
+  border: 0;
+  width: rem(640);
+  min-height: rem(684);
+
+  &__close {
+    @include position(
+      absolute,
+      $top: var(--space-3),
+      $right: var(--space-3),
+      $z-index: 999
+    );
+    cursor: pointer;
+  }
+}

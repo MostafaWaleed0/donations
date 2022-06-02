@@ -1,0 +1,52 @@
+.site-head {
+  --_header-height: 4.1875rem;
+  display: flex;
+  align-items: center;
+  height: var(--_header-height);
+
+  &__navigation {
+    align-items: center;
+    justify-content: center;
+    @include breakpoint-down(medium) {
+      display: none;
+      position: absolute;
+      inset: 0 0 0 auto;
+      z-index: 999;
+      width: 50%;
+      height: 100%;
+      background: $color-surface-secondary;
+
+      &[data-visible='true'] {
+        display: flex;
+      }
+    }
+
+    nav {
+      > ul {
+        > li {
+          text-transform: capitalize;
+          margin-inline-start: var(--space-5);
+          @include breakpoint-down(medium) {
+            margin-inline-start: 0;
+            padding-bottom: var(--space-5);
+          }
+
+          > a[data-state='active'] {
+            color: $neutral-900;
+          }
+        }
+      }
+    }
+  }
+
+  [role='button'] {
+    @include breakpoint(large) {
+      display: none;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    inset: var(--space-4) 0 0 80%;
+  }
+}

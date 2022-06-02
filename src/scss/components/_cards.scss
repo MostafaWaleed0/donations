@@ -1,0 +1,47 @@
+.projects {
+  .cards {
+    .card {
+      @include overlay;
+
+      &:hover,
+      &:focus {
+        &::before {
+          background-color: rgba($neutral-900-rgb, 0.8);
+        }
+      }
+
+      figure {
+        overflow: hidden;
+        figcaption {
+          @include position(
+            absolute,
+            $left: var(--space-6),
+            $right: var(--space-4),
+            $bottom: var(--space-6),
+            $z-index: 1
+          );
+
+          [href] {
+            --flow-space: var(--space-6);
+          }
+        }
+      }
+    }
+  }
+}
+
+.our-news {
+  .cards {
+    --auto-grid-min-size: 18rem;
+
+    .card {
+      width: 34ch;
+
+      &__img {
+        img {
+          border-radius: $border-radius-8;
+        }
+      }
+    }
+  }
+}

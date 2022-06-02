@@ -1,0 +1,35 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: $button-font-weight;
+  font-size: $button-font-size;
+  line-height: em(19);
+  border-radius: $button-border-radius;
+  padding: $button-padding-default;
+  background: none;
+  color: inherit;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+
+  &:focus {
+    transform: scale(1.15);
+  }
+
+  &[data-type='primary'] {
+    background: $button-surface-primary;
+    color: $button-text-primary;
+  }
+
+  &[data-type='secondary'] {
+    background: $button-surface-secondary;
+    color: $button-text-secondary;
+  }
+
+  &[data-type='head'] {
+    padding: em(12) em(32);
+    background: $button-surface-head;
+    color: $button-text-head;
+  }
+}

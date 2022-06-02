@@ -1,0 +1,19 @@
+.headline {
+  column-gap: var(--space-3);
+
+  & + * {
+    --flow-space: var(--space-6);
+  }
+
+  p {
+    --width: 55ch;
+  }
+
+  &[data-layout='center'] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}

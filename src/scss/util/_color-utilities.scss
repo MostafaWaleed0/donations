@@ -1,0 +1,56 @@
+.text-default {
+  color: $color-text-body;
+}
+
+.text-white {
+  color: $neutral-100;
+}
+
+.text-white\/60 {
+  color: rgba($neutral-100-rgb, 0.6);
+}
+
+.text-white\/78 {
+  color: rgba($neutral-100-rgb, 0.78);
+}
+
+.text-inherit {
+  color: inherit;
+}
+
+.text-green {
+  color: $green-400;
+}
+
+.text-dark {
+  color: $neutral-700;
+}
+
+.text-black\/80 {
+  color: rgb($neutral-900-rgb, 0.8);
+}
+
+.text-black\/60 {
+  color: rgb($neutral-900-rgb, 0.6);
+}
+
+.bg-default {
+  background-color: $color-page-background;
+}
+
+.bg-primary {
+  background-color: $color-surface-primary;
+}
+
+.bg-secondary {
+  background-color: $color-surface-secondary;
+}
+
+.bg-tertiary {
+  background-color: $color-surface-tertiary;
+}
+
+.bg-dark {
+  background-color: $neutral-900;
+  color: $neutral-100;
+}

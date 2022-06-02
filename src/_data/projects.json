@@ -1,0 +1,26 @@
+{
+  "post": {
+    "idTitle": "projects-title",
+    "title": "Projects we have done",
+    "heading": "We are Creating sustainable society, for everyone and forever.",
+    "headingTwo": "We are creating a sustainable society, for everyone."
+  },
+
+  "cards": [
+    {
+      "title": "Mission 40K: Tree plantation",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+      "image": "../asset/img/projects/Image-1.png"
+    },
+    {
+      "title": "Weekly cleanliness program in city",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+      "image": "../asset/img/projects/Image-3.png"
+    },
+    {
+      "title": "Wildlife safety program {% year %}",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+      "image": "../asset/img/projects/Image-4.png"
+    }
+  ]
+}

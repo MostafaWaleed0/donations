@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "./basehead.html" %} {% block head %}{% endblock %}
+  </head>
+  <body class="{{bodyClass}}">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    {% include "../partials/global/site-head.html" %}
+    <main id="main-content" class="flow" tabindex="-1">{{ content | safe }}</main>
+    {% include "../partials/global/site-foot.html" %}
+    <script src="../js/slider.js" defer></script>
+    <script src="../js/showPopup.js" defer></script>
+    <script src="../js/showNavMenu.js" defer></script>
+    <script src="../js/increaseNumber.js" defer></script>
+    {% block script %}{% endblock %}
+  </body>
+</html>

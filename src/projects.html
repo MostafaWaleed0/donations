@@ -1,0 +1,90 @@
+---
+title: projects
+layout: layouts/base.html
+bodyClass: projects
+---
+
+<!--=============== PROJECT ARTICLE ===============-->
+<article class="[ our-project ] [ article ] [ wrapper-md ]" aria-la>
+  <div class="[ post ] [ flow ]">
+    <p class="title title--line" id="projects-title">Our project</p>
+    <h1>Weekly cleanliness program in city</h1>
+    <p>
+      Et morbi vitae lobortis nam odio. Faucibus vitae vel neque nullam in in lorem platea
+      mattis. Euismod aenean rhoncus scelerisque amet tincidunt scelerisque aliquam.
+      Luctus porttitor elit vel sapien, accumsan et id ut est. Posuere molestie in turpis
+      quam. Scelerisque in viverra mi ut quisque. In sollicitudin sapien, vel nulla
+      quisque vitae. Scelerisque eget accumsan, non in. Posuere magna erat bibendum amet,
+      nisi eu id.
+    </p>
+    <p>
+      Viverra at diam nunc non ornare. Sed ultricies pulvinar nunc, lacus sem. Tellus
+      aliquam ut euismod cursus dui lectus. Ut amet, cras volutpat dui. A bibendum viverra
+      eu cras.
+    </p>
+    <p class="flow-space-0">
+      Mauris morbi sed dignissim a in nec aliquam fringilla et. Mattis elit dignissim nibh
+      sit. Donec arcu sed elit scelerisque tempor ornare tristique. Integer faucibus duis
+      praesent tempor feugiat ornare in. Erat libero egestas porttitor nunc pellentesque
+      mauris et pulvinar eget.
+    </p>
+    <p>
+      Consectetur feugiat quis hac enim nullam in enim. Tellus nisi dapibus libero rutrum
+      vitae nisl, cursus in sed. Egestas mi ultricies et consectetur vel non. Augue enim
+      enim, eget ut sit purus, justo nisl pharetra. Tincidunt leo aenean dui, varius
+      metus, vel. Maecenas eu rhoncus, est nunc nisi volutpat, amet venenatis faucibus.
+      Enim, vel nunc purus feugiat purus tincidunt neque. Massa ultricies faucibus
+      pellentesque risus duis est.
+    </p>
+    <img src="../asset/img/Image-2.png" alt="" />
+    <h2>Some cool heading</h2>
+    <p>
+      Posuere sed pulvinar enim faucibus justo, cursus. In diam facilisi at sit convallis
+      blandit blandit in. Maecenas odio orci lectus urna ante consequat erat non morbi.
+      Rhoncus ullamcorper dictum sit non semper sit tellus adipiscing. Est sapien rhoncus
+      sit vestibulum sollicitudin. Tellus urna malesuada eu id tempus lorem. Est aliquam
+      sem bibendum felis interdum pharetra. Diam fermentum in lectus morbi at eget sit et
+      quisque. Semper commodo viverra donec magna egestas nibh. Condimentum pellentesque
+      auctor ornare at at tellus nunc cras eu. Velit dignissim penatibus faucibus tempus.
+      Arcu pharetra morbi bibendum et dolor volutpat amet. Sed mauris amet mi sed purus
+      vitae odio. Mi eu lectus suscipit sagittis, ultrices ut dui.
+    </p>
+    <ul class="fw-bold text-dark flow-space-2 padding-0">
+      <li>Posuere sed pulvinar enim faucibus justo, cursus.</li>
+      <li>In diam facilisi at sit convallis blandit blandit in.</li>
+      <li>Maecenas odio orci lectus urna ante consequat erat non morbi.</li>
+    </ul>
+    <p>
+      Posuere sed pulvinar enim faucibus justo, cursus. In diam facilisi at sit convallis
+      blandit blandit in. Maecenas odio orci lectus urna ante consequat erat non morbi.
+    </p>
+  </div>
+</article>
+<!--=============== FEATURE ===============-->
+<section class="[ region ] ] [ bg-tertiary ]">
+  <div class="wrapper-big">
+    <h2 class="visually-hidden">Features</h2>
+    <div class="feature">
+      <ul class="[ feature__list ] [ auto-grid ] [ gap-6 ]" role="list">
+        {% for item in featureThree.items %}
+        <li class="feature__item">
+          <div class="feature__icon" style="--clr: #716fe7">
+            <span class="{{item.icon}}" aria-hidden="true"></span>
+          </div>
+          <article>
+            <h3>{{ item.heading }}</h3>
+            <p>{{ item.description }}</p>
+          </article>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+<!--=============== PROJECTS ===============-->
+<section class="wrapper" aria-l>
+  <h2 class="visually-hidden" id="projects-done-title">Projects we have done</h2>
+  {% include "./_includes/partials/components/project-cards.html" %}
+</section>
+<!--=============== CTA ===============-->
+{% include "./_includes/partials/blocks/cta-section.html" %}

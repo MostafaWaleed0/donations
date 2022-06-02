@@ -1,0 +1,60 @@
+{
+  "home": {
+    "image": "./asset/img/BGImage.jpg",
+    "heading": "Save the environment today for a better tomorrow",
+    "button": "What we do",
+    "buttonTwo": "Play Video"
+  },
+  "about": {
+    "title": "Know about us",
+    "idTitle": "about-hero-title",
+    "heading": "We are a nonprofit team working worldwide",
+    "description": "Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+    "descriptionTwo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Suspendisse varius enim elementum tristique.",
+    "videoUrl": "https://www.youtube.com/watch?v=9LDHHpPVTB0&list=RDMMOpr5Z2Z5xoo&index=1",
+    "poster": "../asset/img/BG.png"
+  },
+  "whatWeDo": {
+    "title": "what we do",
+    "idTitle": "what-we-do-hero-title",
+    "heading": "We are working worldwide",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
+    "image": "../asset/img/Image(2).png"
+  },
+  "media": {
+    "title": "top news",
+    "idTitle": "media-hero-title",
+    "heading": "Our goal is to make water available for everyone",
+    "description": "Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+    "button": "Read more",
+    "image": "../asset/img/Image(2).png"
+  },
+  "contact": {
+    "title": "contact us",
+    "idTitle": "contact-hero-title",
+    "heading": "We’d love to hear from you",
+    "description": "Have any question in mind or want to enquire? Please feel free to contact us through the form or the following details."
+  },
+  "donate": {
+    "title": "donate",
+    "idTitle": "donate-hero-title",
+    "heading": "Making a donation for Nature.",
+    "description": "When you donate, you’re supporting effective solutions to big environmental challenges—an investment in the future of our planet.",
+    "button": "Donate now"
+  },
+
+  "events": {
+    "idTitle": "events-hero-title",
+    "heading": "Say no to using plastic and save Earth",
+    "info": [
+      {
+        "icon": "fa-solid fa-location-dot",
+        "text": "8 Brewery Drive, Hudson, NH 03051, USA"
+      },
+      {
+        "icon": "fa-regular fa-calendar",
+        "text": "September 3, {% year %} 8:30 AM"
+      }
+    ]
+  }
+}

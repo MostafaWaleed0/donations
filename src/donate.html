@@ -1,0 +1,107 @@
+---
+title: donate
+headerBg: bg-primary
+layout: layouts/base.html
+bodyClass: donate
+---
+
+<!--=============== HERO ===============-->
+<section
+  class="[ hero ] [ {{ headerBg }} ] [ region ]"
+  aria-labelledby="{{ heroes.donate.idTitle }}"
+>
+  <div class="[ wrapper ] [ flex-space-column-responsive ]">
+    <div class="[ post ] [ flow ]">
+      <p class="title title--line" id="{{ heroes.donate.idTitle }}">
+        {{ heroes.donate.title }}
+      </p>
+      <h1>{{ heroes.donate.heading }}</h1>
+      <p>{{ heroes.donate.description }}</p>
+      <a href="" class="[ button ]" data-type="primary">{{ heroes.donate.button }}</a>
+    </div>
+    <div>
+      <img src="../asset/img/Image(3).png" alt="" />
+    </div>
+  </div>
+</section>
+<!--=============== CONTRIBUTION ===============-->
+<article class="[ contribution ] [ wrapper ] [ padding-block-end-8 ]">
+  <div class="[ flex-column-responsive ] [ gap-5 ]">
+    <div class="flow">
+      <h2>How you can contribute to protect Earth</h2>
+      <p class="flow-space-3">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+        in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
+        interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
+        cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+      </p>
+    </div>
+    <div class="[ carousel ] [ w-6/12 ]" role="region" aria-label="carousel">
+      <div>
+        <ol class="carousel__indicators" role="list" id="carousel-indicators">
+          <li>
+            <button class="button active" type="button" aria-current="true">
+              Overview
+            </button>
+          </li>
+          <li>
+            <button class="button" type="button" aria-current="false">Impact</button>
+          </li>
+          <li>
+            <button class="button" type="button" aria-current="false">
+              What You get
+            </button>
+          </li>
+        </ol>
+      </div>
+      <div class="slides flex-space">
+        <div class="[ slide ] [ flow ] active" role="group" aria-label="slide 1 of 3">
+          <p>
+            Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem
+            vitae risus tristique posuere.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+            enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros
+            dolor interdum nulla, ut commodo diam libero vitae erat.
+          </p>
+        </div>
+        <div class="slide" role="group" aria-label="slide 2 of 3">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+            enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros
+            dolor interdum nulla, ut commodo diam libero vitae erat.
+          </p>
+        </div>
+        <div class="slide" role="group" aria-label="slide 3 of 3">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+            enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros
+            dolor interdum nulla, ut commodo diam libero vitae erat. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+            tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+            commodo diam libero vitae erat.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+<!--=============== DONATE ===============-->
+<section class="use-donate">
+  <div class="wrapper flex-space-column-responsive">
+    <h2 class="w-4/11">How we use your donation</h2>
+    <p class="w-3/11">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+      eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum
+      nulla, ut commodo diam libero vitae erat. Nunc ut sem vitae risus tristique posuere.
+    </p>
+    <p class="w-3/11">
+      Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae
+      risus tristique posuere. Aenean faucibus nibh et justo cursus id rutrum lorem
+      imperdiet.
+    </p>
+  </div>
+</section>
+<!--=============== CTA ===============-->
+{% include "./_includes/partials/blocks/cta-section.html" %}

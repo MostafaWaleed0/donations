@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "icon": "fa-solid fa-hotel",
+      "heading": "Build Healthy Cities",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+    },
+    {
+      "icon": "fa-solid fa-seedling",
+      "heading": "Tree Plantation",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+    },
+    {
+      "icon": "fa-solid fa-water",
+      "heading": "Protect Land and Water",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+    },
+    {
+      "icon": "fa-solid fa-dog",
+      "heading": "Animal Safety",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+    }
+  ]
+}

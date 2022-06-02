@@ -1,0 +1,33 @@
+{
+  "headline": {
+    "idHeading": "awards-title",
+    "heading": "Awards & Recognitions"
+  },
+
+  "cards": [
+    {
+      "image": "../asset/img/awards/Awardbadge-1.png",
+      "year": "{% year %}",
+      "event": "Best NGO Award",
+      "place": "Berlin, Germany"
+    },
+    {
+      "image": "../asset/img/awards/Awardbadge-2.png",
+      "year": "2018",
+      "event": "Global Award",
+      "place": "New York, USA"
+    },
+    {
+      "image": "../asset/img/awards/Awardbadge-3.png",
+      "year": "2014",
+      "event": "Foresto Award",
+      "place": "New Delhi, India"
+    },
+    {
+      "image": "../asset/img/awards/Awardbadge-4.png",
+      "year": "2010",
+      "event": "Earth Saver Award",
+      "place": "Vienna, Austria"
+    }
+  ]
+}

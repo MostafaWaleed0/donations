@@ -1,0 +1,16 @@
+<ol class="[ cards ] [ auto-grid ] [ flow-space-7 ]" role="list">
+  {% for card in projects.cards %}
+  <li class="[ card ] [ text-white ]" tabindex="0">
+    <figure>
+      <img src="{{ card.image }}" alt="" />
+      <figcaption>
+        <article class="flow">
+          <h3 class="fs-600 text-inherit">{{ card.title }}</h3>
+          <p>{{ card.description }}</p>
+          <a href="" class="[ button ]" data-type="secondary">See more</a>
+        </article>
+      </figcaption>
+    </figure>
+  </li>
+  {% endfor %}
+</ol>
