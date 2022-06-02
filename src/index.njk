@@ -1,6 +1,6 @@
 ---
 title: home
-layout: layouts/home.html
+layout: layouts/home.njk
 bodyClass: home
 eleventyNavigation:
   key: Home
@@ -63,7 +63,7 @@ eleventyNavigation:
     </div>
   </div>
   <!--=============== SUPPORTERS ===============-->
-  {% include "./_includes/partials/blocks/supporters.html" %}
+  {% include "./_includes/partials/blocks/supporters.njk" %}
 </section>
 <!--=============== WORKING ===============-->
 <section class="[ working ] [ region ] [ bg-primary ]" aria-labelledby="working-title">
@@ -109,7 +109,7 @@ eleventyNavigation:
       </p>
       <h2>{{ projects.post.heading }}</h2>
     </header>
-    {% include "./_includes/partials/components/project-cards.html" %}
+    {% include "./_includes/partials/components/project-cards.njk" %}
   </div>
 </section>
 <!--=============== CHART ===============-->
@@ -140,8 +140,8 @@ eleventyNavigation:
   </div>
 </section>
 <!--=============== CTA ===============-->
-{% include "./_includes/partials/blocks/cta-section.html" %}
+{% include "./_includes/partials/blocks/cta-section.njk" %}
 <!--=============== NEWS ===============-->
-{% include "./_includes/partials/blocks/news.html" %}
+{% include "./_includes/partials/blocks/news.njk" %}
 <!--=============== EVENTS ===============-->
-{% include "./_includes/partials/blocks/events.html" %}
+{% include "./_includes/partials/blocks/events.njk" %}

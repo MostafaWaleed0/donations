@@ -1,6 +1,6 @@
 ---
 title: what we do
-layout: layouts/base.html
+layout: layouts/base.njk
 bodyClass: what-we__do
 eleventyNavigation:
   key: what we do
@@ -58,12 +58,12 @@ eleventyNavigation:
       <p class="title" id="{{ projects.post.idTitle }}">{{ projects.post.title }}</p>
       <h2 class="flow-space-2">{{ projects.post.headingTwo }}</h2>
     </header>
-    {% include "./_includes/partials/components/project-cards.html" %}
+    {% include "./_includes/partials/components/project-cards.njk" %}
   </div>
 </section>
 <!--=============== CTA ===============-->
-{% include "./_includes/partials/blocks/cta-section.html" %}
+{% include "./_includes/partials/blocks/cta-section.njk" %}
 <!--=============== NEWS ===============-->
-{% include "./_includes/partials/blocks/news.html" %}
+{% include "./_includes/partials/blocks/news.njk" %}
 <!--=============== EVENTS ===============-->
-{% include "./_includes/partials/blocks/events.html" %}
+{% include "./_includes/partials/blocks/events.njk" %}

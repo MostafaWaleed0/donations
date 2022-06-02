@@ -1,7 +1,7 @@
 ---
 title: events
 headerBg: bg-primary
-layout: layouts/base.html
+layout: layouts/base.njk
 bodyClass: events
 ---
 
@@ -67,6 +67,6 @@ bodyClass: events
       <h2 id="{{ events.headlineTwo.idTitle }}">{{ events.headlineTwo.heading }}</h2>
       <div class="line"></div>
     </header>
-    {% include "./_includes/partials/components/events-boxes.html" %}
+    {% include "./_includes/partials/components/events-boxes.njk" %}
   </div>
 </section>
