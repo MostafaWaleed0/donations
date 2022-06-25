@@ -1,11 +1,11 @@
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const rssPlugin = require('@11ty/eleventy-plugin-rss');
+const htmlmin = require('html-minifier');
 
 function global(eleventyConfig, userOptions = {}) {
   const {parse} = require('node-html-parser');
 
   const options = {
-    name: 'lazy-images',
     ...userOptions
   };
 
@@ -13,9 +13,15 @@ function global(eleventyConfig, userOptions = {}) {
     if (outputPath.endsWith('.html')) {
       const root = parse(content);
       const images = root.querySelectorAll('img');
+      const videos = root.querySelectorAll('video');
+
       images.forEach(img => {
         img.setAttribute('loading', 'lazy');
         img.setAttribute('decoding', 'async');
+      });
+      videos.forEach(video => {
+        video.setAttribute('loading', 'lazy');
+        video.setAttribute('decoding', 'async');
       });
       return root.toString();
     }
@@ -32,6 +38,17 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(global, {});
   eleventyConfig.addPlugin(rssPlugin);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
+  eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
+    if (outputPath.endsWith('.html')) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+    return content;
+  });
 
   return {
     dir: {
