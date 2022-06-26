@@ -12,7 +12,7 @@
     "description": "Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
     "descriptionTwo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Suspendisse varius enim elementum tristique.",
     "videoUrl": "https://www.youtube.com/watch?v=9LDHHpPVTB0&list=RDMMOpr5Z2Z5xoo&index=1",
-    "poster": "../asset/img/BG.png"
+    "poster": "../asset/img/BGImage.webp"
   },
   "whatWeDo": {
     "title": "what we do",

@@ -17,11 +17,9 @@ function global(eleventyConfig, userOptions = {}) {
 
       images.forEach(img => {
         img.setAttribute('loading', 'lazy');
-        img.setAttribute('decoding', 'async');
       });
       videos.forEach(video => {
         video.setAttribute('loading', 'lazy');
-        video.setAttribute('decoding', 'async');
       });
       return root.toString();
     }
@@ -43,7 +41,8 @@ module.exports = function (eleventyConfig) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
-        collapseWhitespace: true
+        collapseWhitespace: true,
+        minifyCSS: true
       });
       return minified;
     }

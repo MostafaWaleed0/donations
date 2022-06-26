@@ -9,7 +9,8 @@
     "build:eleventy": "eleventy",
     "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
     "start": "npm-run-all build:sass --parallel watch:*",
-    "build": "npm-run-all build:sass build:eleventy"
+    "build": "npm-run-all build:sass build:eleventy",
+    "gulp": "gulp"
   },
   "author": "",
   "license": "ISC",
@@ -33,6 +34,7 @@
   "devDependencies": {
     "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-rss": "^1.1.2",
+    "gulp": "^4.0.2",
     "node-html-parser": "^5.3.3"
   }
 }
